@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="./vue.js"></script>
+</head>
+<body>
+  <div id="box">
+   <input type="text" v-model="msg">
+   <input type="text"  v-model="msg">
+   {{msg}}
+   <li v-for="value in arr">
+      {{value}}{{ }}
+   </li>
+  <li v-for="(k,v) in json">
+    {{k}}{{v}}{{$index}}
+  </li>
+  </div>
+
+
+  <script>
+    var c = new Vue({
+      el:"#box",
+      data:{
+        msg:"hello vue",
+        arr:[1,2,3,5],
+        json:{a:"banner",b:"apple",c:"orange",d:"puyhh"}
+      }
+    })
+  </script>
+</body>
+</html>
